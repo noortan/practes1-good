@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="imageHeader">
+            <img src="images/logo.gif" alt="logo" id="logo">
+            
+        </div>
+        <div id="headerTitle">
+            <h1 class="titleHeader">The Good Travel</h1>
+        </div>
+        
+        
+    </header>
+    <main>
+        <section id="left">
+            <div id="formContianer">
+            <form id="tripForm">
+                <label for="Pname">Place name</label><br>
+                <input type="text" id="Pname" name="Pname"> <br><br>
+                <label for="Tname">Trip name</label><br>
+                <select name="Tname" id="Tname">
+                    <option value="HAWAII">HAWAII</option>
+                    <option value="LONDON">LONDON</option>
+                    <option value="PARIS">PARIS</option>
+                    <option value="ITALY">ITALY</option>
+                    <option value="SLOVAKIA">SLOVAKIA</option>
+                    <option value="MALAYSIA">MALAYSIA</option>
+                </select><br><br>
+                <label for="TOT">Type of Transport</label><br>
+                <select name="TOT" id="TOT">
+                    <option value="car">Car</option>
+                    <option value="trian">Trian</option>
+                    <option value="flight">Flight</option>
+                    <option value="cruise">Cruise</option>
+                </select><br><br>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <button id="clearAll">Clear</button>
+
+            </div>
+        </section>
+        <section id="right">
+            <table id="tripTable">
+                <thead>
+                    <th>Remove</th>
+                    <th>Image</th>
+                    <th>Information</th>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
